@@ -84,6 +84,7 @@ Cookiecutter will ask you for the following values:
 | `s3_default_bucket` | Default S3 bucket name | _(empty)_ |
 | `include_api_connector` | Include HTTP API connector | `yes` |
 | `include_database_connector` | Include database connector | `yes` |
+| `venv_name` | Virtual environment directory name | `.venv` |
 | `log_level` | Default log level | `INFO` |
 
 ### Non-interactive generation
