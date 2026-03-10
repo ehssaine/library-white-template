@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 .PHONY: help venv install lint format typecheck test test-unit test-integration clean
 
-VENV_DIR := .venv
+VENV_DIR := {{ cookiecutter.venv_name }}
 PYTHON := $(VENV_DIR)/bin/python
 ACTIVATE := . $(VENV_DIR)/bin/activate
 
