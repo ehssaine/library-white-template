@@ -15,5 +15,6 @@
   "s3_default_bucket": "",
   "include_api_connector": ["yes", "no"],
   "include_database_connector": ["yes", "no"],
+  "venv_name": ".venv",
   "log_level": ["INFO", "DEBUG", "WARNING", "ERROR"]
 }
