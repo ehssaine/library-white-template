@@ -1,11 +1,24 @@
 .DEFAULT_GOAL := help
-.PHONY: help install lint format typecheck test test-unit test-integration clean
+.PHONY: help venv install lint format typecheck test test-unit test-integration clean
+
+VENV_DIR := .venv
+PYTHON := $(VENV_DIR)/bin/python
+ACTIVATE := . $(VENV_DIR)/bin/activate
 
 help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
-install: ## Install dependencies with uv
+venv: ## Create virtual environment using venv
+	@if [ ! -d "$(VENV_DIR)" ]; then \
+		echo "Creating virtual environment in $(VENV_DIR)..."; \
+		python{{ cookiecutter.python_version }} -m venv $(VENV_DIR) || python3 -m venv $(VENV_DIR); \
+		echo "Virtual environment created. Activate with: $(ACTIVATE)"; \
+	else \
+		echo "Virtual environment already exists in $(VENV_DIR)"; \
+	fi
+
+install: venv ## Install dependencies with uv (creates venv first if needed)
 	uv sync --all-extras
 
 lint: ## Run ruff linter
