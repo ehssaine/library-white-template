@@ -7,10 +7,8 @@ import sys
 
 import structlog
 
-from {{ cookiecutter.project_slug }}.config.settings import Settings
 
-
-def setup_logging(settings: Settings | None = None) -> None:
+def setup_logging(level: int = logging.INFO) -> None:
     """Configure ``structlog`` and the stdlib ``logging`` root logger.
 
     Call this once at application startup::
@@ -18,8 +16,6 @@ def setup_logging(settings: Settings | None = None) -> None:
         from {{ cookiecutter.project_slug }}.utils.logging import setup_logging
         setup_logging()
     """
-    _settings = settings or Settings()
-    level = getattr(logging, _settings.log_level.upper(), logging.INFO)
 
     structlog.configure(
         processors=[

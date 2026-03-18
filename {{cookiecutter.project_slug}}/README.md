@@ -52,7 +52,6 @@ All configuration is managed through environment variables loaded via
 
 | Variable | Description | Default |
 |---|---|---|
-| `LOG_LEVEL` | Logging level | `{{ cookiecutter.log_level }}` |
 {%- if cookiecutter.use_s3 == "yes" %}
 | `S3_BUCKET_NAME` | Default S3 bucket | `{{ cookiecutter.s3_default_bucket }}` |
 | `S3_REGION` | AWS region | `{{ cookiecutter.aws_region }}` |
@@ -81,7 +80,3 @@ uv run pre-commit install
 # Available make targets
 make help
 ```
-
-## License
-
-{{ cookiecutter.license }}

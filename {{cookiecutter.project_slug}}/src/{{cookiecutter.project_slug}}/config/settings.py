@@ -56,7 +56,6 @@ class Settings(BaseSettings):
     Usage::
 
         settings = Settings()           # from env / .env
-        settings = Settings(log_level="DEBUG")  # explicit override
     """
 
     model_config = SettingsConfigDict(
@@ -64,8 +63,6 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",
         extra="ignore",
     )
-
-    log_level: str = "{{ cookiecutter.log_level }}"
     {%- if cookiecutter.use_s3 == "yes" %}
     s3: S3Settings = S3Settings()
     {%- endif %}

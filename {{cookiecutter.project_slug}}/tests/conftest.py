@@ -18,7 +18,7 @@ from {{ cookiecutter.project_slug }}.config.settings import S3Settings
 @pytest.fixture
 def settings() -> Settings:
     """Return a ``Settings`` instance with test defaults."""
-    return Settings(log_level="DEBUG")
+    return Settings()
 
 
 {% if cookiecutter.use_s3 == "yes" %}

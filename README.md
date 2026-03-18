@@ -76,7 +76,6 @@ Cookiecutter will ask you for the following values:
 | `organization` | Organization / namespace | `my_org` |
 | `python_version` | Target Python version | `3.12` |
 | `min_python_version` | Minimum supported Python | `3.10` |
-| `license` | License type | `MIT` |
 | `use_s3` | Include S3 service module | `yes` |
 | `use_docker` | Generate Dockerfile | `yes` |
 | `use_github_actions` | Generate CI workflow | `yes` |
@@ -85,7 +84,6 @@ Cookiecutter will ask you for the following values:
 | `include_api_connector` | Include HTTP API connector | `yes` |
 | `include_database_connector` | Include database connector | `yes` |
 | `venv_name` | Virtual environment directory name | `.venv` |
-| `log_level` | Default log level | `INFO` |
 
 ### Non-interactive generation
 
@@ -364,6 +362,3 @@ uv sync --all-extras
 
 ---
 
-## License
-
-This template is provided under the MIT license.
