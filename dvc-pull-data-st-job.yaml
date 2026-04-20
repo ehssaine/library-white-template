@@ -1,0 +1,64 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dvc-pull-data-st
+  labels:
+    app: my-fastapi-service
+    component: data-downloader
+spec:
+  backoffLimit: 2
+  activeDeadlineSeconds: 7200  # 2h ceiling for 65GB
+  ttlSecondsAfterFinished: 86400  # auto-cleanup after 24h
+  template:
+    metadata:
+      labels:
+        app: my-fastapi-service
+        component: data-downloader
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: dvc-pull
+          image: your-registry/my-fastapi-service:latest
+          command: ["dvc", "pull", "-r", "data-st"]
+          workingDir: /workspace
+          env:
+            # From Secret
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: s3-credentials
+                  key: access_key_id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: s3-credentials
+                  key: secret_access_key
+            # From ConfigMap
+            - name: AWS_DEFAULT_REGION
+              valueFrom:
+                configMapKeyRef:
+                  name: s3-config
+                  key: region
+            - name: AWS_ENDPOINT_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: s3-config
+                  key: endpoint_url
+          volumeMounts:
+            - name: data-pvc
+              mountPath: /workspace/data
+            - name: dvc-repo
+              mountPath: /workspace
+          resources:
+            requests:
+              cpu: "1"
+              memory: "2Gi"
+            limits:
+              cpu: "2"
+              memory: "4Gi"
+      volumes:
+        - name: data-pvc
+          persistentVolumeClaim:
+            claimName: model-data-pvc
+        - name: dvc-repo
+          emptyDir: {}
