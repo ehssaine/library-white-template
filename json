@@ -1,0 +1,1348 @@
+{
+  "matrices": [
+    {
+      "echelle": "PC",
+      "model": "shift_LCorp",
+      "rows": [
+        {
+          "plot": 1,
+          "effectifs": 6717,
+          "dernier_eff_pit": 95,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.930260725
+            },
+            {
+              "notation": 2,
+              "proba": 0.064285814
+            },
+            {
+              "notation": 3,
+              "proba": 0.004903778
+            },
+            {
+              "notation": 4,
+              "proba": 0.000537991
+            },
+            {
+              "notation": 5,
+              "proba": 1.12784e-05
+            },
+            {
+              "notation": 6,
+              "proba": 2.84885e-07
+            },
+            {
+              "notation": 7,
+              "proba": 1.259e-07
+            },
+            {
+              "notation": 8,
+              "proba": 1.955e-09
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 2,
+          "effectifs": 24162,
+          "dernier_eff_pit": 543,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.014421398
+            },
+            {
+              "notation": 2,
+              "proba": 0.935087007
+            },
+            {
+              "notation": 3,
+              "proba": 0.039617846
+            },
+            {
+              "notation": 4,
+              "proba": 0.010374743
+            },
+            {
+              "notation": 5,
+              "proba": 0.000326514
+            },
+            {
+              "notation": 6,
+              "proba": 8.93591e-06
+            },
+            {
+              "notation": 7,
+              "proba": 4.825e-06
+            },
+            {
+              "notation": 8,
+              "proba": 8.351e-08
+            },
+            {
+              "notation": 9,
+              "proba": 0.0001586
+            }
+          ]
+        },
+        {
+          "plot": 3,
+          "effectifs": 18326,
+          "dernier_eff_pit": 329,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.000677574
+            },
+            {
+              "notation": 2,
+              "proba": 0.064075683
+            },
+            {
+              "notation": 3,
+              "proba": 0.831718308
+            },
+            {
+              "notation": 4,
+              "proba": 0.099630508
+            },
+            {
+              "notation": 5,
+              "proba": 0.003158072
+            },
+            {
+              "notation": 6,
+              "proba": 9.01439e-05
+            },
+            {
+              "notation": 7,
+              "proba": 4.631e-05
+            },
+            {
+              "notation": 8,
+              "proba": 8.264e-07
+            },
+            {
+              "notation": 9,
+              "proba": 0.0006026
+            }
+          ]
+        },
+        {
+          "plot": 4,
+          "effectifs": 41861,
+          "dernier_eff_pit": 630,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 5.92071e-05
+            },
+            {
+              "notation": 2,
+              "proba": 0.007571517
+            },
+            {
+              "notation": 3,
+              "proba": 0.03863
+            },
+            {
+              "notation": 4,
+              "proba": 0.88533803
+            },
+            {
+              "notation": 5,
+              "proba": 0.061914312
+            },
+            {
+              "notation": 6,
+              "proba": 0.002096326
+            },
+            {
+              "notation": 7,
+              "proba": 0.0014292
+            },
+            {
+              "notation": 8,
+              "proba": 3.032e-05
+            },
+            {
+              "notation": 9,
+              "proba": 0.0029311
+            }
+          ]
+        },
+        {
+          "plot": 5,
+          "effectifs": 31134,
+          "dernier_eff_pit": 556,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 1.34166e-06
+            },
+            {
+              "notation": 2,
+              "proba": 0.000235797
+            },
+            {
+              "notation": 3,
+              "proba": 0.001872436
+            },
+            {
+              "notation": 4,
+              "proba": 0.052363798
+            },
+            {
+              "notation": 5,
+              "proba": 0.863782542
+            },
+            {
+              "notation": 6,
+              "proba": 0.033930772
+            },
+            {
+              "notation": 7,
+              "proba": 0.0388115
+            },
+            {
+              "notation": 8,
+              "proba": 0.0009037
+            },
+            {
+              "notation": 9,
+              "proba": 0.0080982
+            }
+          ]
+        },
+        {
+          "plot": 6,
+          "effectifs": 4823,
+          "dernier_eff_pit": 135,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 8.54312e-08
+            },
+            {
+              "notation": 2,
+              "proba": 1.76582e-05
+            },
+            {
+              "notation": 3,
+              "proba": 0.000142221
+            },
+            {
+              "notation": 4,
+              "proba": 0.005353376
+            },
+            {
+              "notation": 5,
+              "proba": 0.116726892
+            },
+            {
+              "notation": 6,
+              "proba": 0.760766681
+            },
+            {
+              "notation": 7,
+              "proba": 0.0550611
+            },
+            {
+              "notation": 8,
+              "proba": 0.0150647
+            },
+            {
+              "notation": 9,
+              "proba": 0.0468673
+            }
+          ]
+        },
+        {
+          "plot": 7,
+          "effectifs": 3768,
+          "dernier_eff_pit": 148,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 3.65768e-08
+            },
+            {
+              "notation": 2,
+              "proba": 8.3117e-06
+            },
+            {
+              "notation": 3,
+              "proba": 8.11469e-05
+            },
+            {
+              "notation": 4,
+              "proba": 0.002870985
+            },
+            {
+              "notation": 5,
+              "proba": 0.092433989
+            },
+            {
+              "notation": 6,
+              "proba": 0.066798575
+            },
+            {
+              "notation": 7,
+              "proba": 0.6783856
+            },
+            {
+              "notation": 8,
+              "proba": 0.0217908
+            },
+            {
+              "notation": 9,
+              "proba": 0.1376306
+            }
+          ]
+        },
+        {
+          "plot": 8,
+          "effectifs": 341,
+          "dernier_eff_pit": 4,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 2.35482e-09
+            },
+            {
+              "notation": 2,
+              "proba": 6.21101e-07
+            },
+            {
+              "notation": 3,
+              "proba": 6.08859e-06
+            },
+            {
+              "notation": 4,
+              "proba": 0.00027344
+            },
+            {
+              "notation": 5,
+              "proba": 0.009664722
+            },
+            {
+              "notation": 6,
+              "proba": 0.066347425
+            },
+            {
+              "notation": 7,
+              "proba": 0.0765461
+            },
+            {
+              "notation": 8,
+              "proba": 0.5044013
+            },
+            {
+              "notation": 9,
+              "proba": 0.3427603
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "echelle": "PR",
+      "model": "shift_LCorp",
+      "rows": [
+        {
+          "plot": 1,
+          "effectifs": 705,
+          "dernier_eff_pit": 27,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.912609251
+            },
+            {
+              "notation": 2,
+              "proba": 0.071898327
+            },
+            {
+              "notation": 3,
+              "proba": 0.014317702
+            },
+            {
+              "notation": 4,
+              "proba": 0.000627291
+            },
+            {
+              "notation": 5,
+              "proba": 0.000475472
+            },
+            {
+              "notation": 6,
+              "proba": 7.1291e-05
+            },
+            {
+              "notation": 7,
+              "proba": 6.664e-07
+            },
+            {
+              "notation": 8,
+              "proba": 0.0
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 2,
+          "effectifs": 3768,
+          "dernier_eff_pit": 77,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.020733636
+            },
+            {
+              "notation": 2,
+              "proba": 0.883799045
+            },
+            {
+              "notation": 3,
+              "proba": 0.080354338
+            },
+            {
+              "notation": 4,
+              "proba": 0.008751486
+            },
+            {
+              "notation": 5,
+              "proba": 0.003094232
+            },
+            {
+              "notation": 6,
+              "proba": 0.000570897
+            },
+            {
+              "notation": 7,
+              "proba": 9.127e-06
+            },
+            {
+              "notation": 8,
+              "proba": 0.0026872
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 3,
+          "effectifs": 4626,
+          "dernier_eff_pit": 108,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.061025871
+            },
+            {
+              "notation": 3,
+              "proba": 0.831761793
+            },
+            {
+              "notation": 4,
+              "proba": 0.040359146
+            },
+            {
+              "notation": 5,
+              "proba": 0.049155246
+            },
+            {
+              "notation": 6,
+              "proba": 0.006174581
+            },
+            {
+              "notation": 7,
+              "proba": 0.0
+            },
+            {
+              "notation": 8,
+              "proba": 0.0115234
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 4,
+          "effectifs": 2418,
+          "dernier_eff_pit": 32,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.015532407
+            },
+            {
+              "notation": 3,
+              "proba": 0.049988469
+            },
+            {
+              "notation": 4,
+              "proba": 0.800298347
+            },
+            {
+              "notation": 5,
+              "proba": 0.060749305
+            },
+            {
+              "notation": 6,
+              "proba": 0.038438609
+            },
+            {
+              "notation": 7,
+              "proba": 0.0019028
+            },
+            {
+              "notation": 8,
+              "proba": 0.0330901
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 5,
+          "effectifs": 490,
+          "dernier_eff_pit": 65,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.003947298
+            },
+            {
+              "notation": 3,
+              "proba": 0.0838517
+            },
+            {
+              "notation": 4,
+              "proba": 0.073680843
+            },
+            {
+              "notation": 5,
+              "proba": 0.485063339
+            },
+            {
+              "notation": 6,
+              "proba": 0.24356687
+            },
+            {
+              "notation": 7,
+              "proba": 0.0112185
+            },
+            {
+              "notation": 8,
+              "proba": 0.0986715
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 6,
+          "effectifs": 326,
+          "dernier_eff_pit": 9,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.000533914
+            },
+            {
+              "notation": 3,
+              "proba": 0.005805534
+            },
+            {
+              "notation": 4,
+              "proba": 0.045598121
+            },
+            {
+              "notation": 5,
+              "proba": 0.060841845
+            },
+            {
+              "notation": 6,
+              "proba": 0.551141133
+            },
+            {
+              "notation": 7,
+              "proba": 0.0791784
+            },
+            {
+              "notation": 8,
+              "proba": 0.2569011
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 7,
+          "effectifs": 70,
+          "dernier_eff_pit": 0,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.0
+            },
+            {
+              "notation": 3,
+              "proba": 0.0
+            },
+            {
+              "notation": 4,
+              "proba": 2.12439e-07
+            },
+            {
+              "notation": 5,
+              "proba": 0.0
+            },
+            {
+              "notation": 6,
+              "proba": 0.037525476
+            },
+            {
+              "notation": 7,
+              "proba": 0.210141
+            },
+            {
+              "notation": 8,
+              "proba": 0.7523333
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "echelle": "PP",
+      "model": "shift_LCorp",
+      "rows": [
+        {
+          "plot": 1,
+          "effectifs": 2761,
+          "dernier_eff_pit": 55,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.850909938
+            },
+            {
+              "notation": 2,
+              "proba": 0.136547048
+            },
+            {
+              "notation": 3,
+              "proba": 0.008071215
+            },
+            {
+              "notation": 4,
+              "proba": 0.003588969
+            },
+            {
+              "notation": 5,
+              "proba": 0.000667081
+            },
+            {
+              "notation": 6,
+              "proba": 0.000185823
+            },
+            {
+              "notation": 7,
+              "proba": 2.993e-05
+            },
+            {
+              "notation": 8,
+              "proba": 0.0
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 2,
+          "effectifs": 3015,
+          "dernier_eff_pit": 76,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.041318123
+            },
+            {
+              "notation": 2,
+              "proba": 0.878360475
+            },
+            {
+              "notation": 3,
+              "proba": 0.055857098
+            },
+            {
+              "notation": 4,
+              "proba": 0.014866036
+            },
+            {
+              "notation": 5,
+              "proba": 0.007195773
+            },
+            {
+              "notation": 6,
+              "proba": 0.001859703
+            },
+            {
+              "notation": 7,
+              "proba": 0.0001428
+            },
+            {
+              "notation": 8,
+              "proba": 0.0004
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 3,
+          "effectifs": 8480,
+          "dernier_eff_pit": 272,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.004131885
+            },
+            {
+              "notation": 2,
+              "proba": 0.156190432
+            },
+            {
+              "notation": 3,
+              "proba": 0.722848289
+            },
+            {
+              "notation": 4,
+              "proba": 0.080128536
+            },
+            {
+              "notation": 5,
+              "proba": 0.017438509
+            },
+            {
+              "notation": 6,
+              "proba": 0.014093194
+            },
+            {
+              "notation": 7,
+              "proba": 0.0009292
+            },
+            {
+              "notation": 8,
+              "proba": 0.00424
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 4,
+          "effectifs": 3783,
+          "dernier_eff_pit": 101,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.00532455
+            },
+            {
+              "notation": 2,
+              "proba": 0.04737414
+            },
+            {
+              "notation": 3,
+              "proba": 0.072786755
+            },
+            {
+              "notation": 4,
+              "proba": 0.79500505
+            },
+            {
+              "notation": 5,
+              "proba": 0.021098846
+            },
+            {
+              "notation": 6,
+              "proba": 0.037150057
+            },
+            {
+              "notation": 7,
+              "proba": 0.0147006
+            },
+            {
+              "notation": 8,
+              "proba": 0.00656
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 5,
+          "effectifs": 715,
+          "dernier_eff_pit": 19,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.002002882
+            },
+            {
+              "notation": 2,
+              "proba": 0.063130899
+            },
+            {
+              "notation": 3,
+              "proba": 0.071053008
+            },
+            {
+              "notation": 4,
+              "proba": 0.171496864
+            },
+            {
+              "notation": 5,
+              "proba": 0.458255219
+            },
+            {
+              "notation": 6,
+              "proba": 0.18853722
+            },
+            {
+              "notation": 7,
+              "proba": 0.0050839
+            },
+            {
+              "notation": 8,
+              "proba": 0.04044
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 6,
+          "effectifs": 1183,
+          "dernier_eff_pit": 11,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.000712759
+            },
+            {
+              "notation": 2,
+              "proba": 0.012620577
+            },
+            {
+              "notation": 3,
+              "proba": 0.040642052
+            },
+            {
+              "notation": 4,
+              "proba": 0.187065155
+            },
+            {
+              "notation": 5,
+              "proba": 0.087115306
+            },
+            {
+              "notation": 6,
+              "proba": 0.579919374
+            },
+            {
+              "notation": 7,
+              "proba": 0.0212048
+            },
+            {
+              "notation": 8,
+              "proba": 0.07072
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        },
+        {
+          "plot": 7,
+          "effectifs": 259,
+          "dernier_eff_pit": 4,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.000408595
+            },
+            {
+              "notation": 2,
+              "proba": 0.003712742
+            },
+            {
+              "notation": 3,
+              "proba": 0.008035982
+            },
+            {
+              "notation": 4,
+              "proba": 0.134861525
+            },
+            {
+              "notation": 5,
+              "proba": 0.002324445
+            },
+            {
+              "notation": 6,
+              "proba": 0.09312914
+            },
+            {
+              "notation": 7,
+              "proba": 0.6475776
+            },
+            {
+              "notation": 8,
+              "proba": 0.10995
+            },
+            {
+              "notation": 9,
+              "proba": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "echelle": "PI",
+      "model": "shift_IFA",
+      "rows": [
+        {
+          "plot": 1,
+          "effectifs": 774,
+          "dernier_eff_pit": 14,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.825341509
+            },
+            {
+              "notation": 2,
+              "proba": 0.153254507
+            },
+            {
+              "notation": 3,
+              "proba": 0.021031288
+            },
+            {
+              "notation": 4,
+              "proba": 0.0
+            },
+            {
+              "notation": 5,
+              "proba": 0.0
+            },
+            {
+              "notation": 6,
+              "proba": 0.0
+            },
+            {
+              "notation": 7,
+              "proba": 0.0
+            },
+            {
+              "notation": 8,
+              "proba": 0.0
+            },
+            {
+              "notation": 9,
+              "proba": 0.0003727
+            }
+          ]
+        },
+        {
+          "plot": 2,
+          "effectifs": 7930,
+          "dernier_eff_pit": 222,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.00519427
+            },
+            {
+              "notation": 2,
+              "proba": 0.847157468
+            },
+            {
+              "notation": 3,
+              "proba": 0.144788523
+            },
+            {
+              "notation": 4,
+              "proba": 0.002852909
+            },
+            {
+              "notation": 5,
+              "proba": 0.0
+            },
+            {
+              "notation": 6,
+              "proba": 0.0
+            },
+            {
+              "notation": 7,
+              "proba": 0.0
+            },
+            {
+              "notation": 8,
+              "proba": 0.0
+            },
+            {
+              "notation": 9,
+              "proba": 6.831e-06
+            }
+          ]
+        },
+        {
+          "plot": 3,
+          "effectifs": 35307,
+          "dernier_eff_pit": 764,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.021008853
+            },
+            {
+              "notation": 3,
+              "proba": 0.92740516
+            },
+            {
+              "notation": 4,
+              "proba": 0.048803074
+            },
+            {
+              "notation": 5,
+              "proba": 0.0027225
+            },
+            {
+              "notation": 6,
+              "proba": 0.0
+            },
+            {
+              "notation": 7,
+              "proba": 0.0
+            },
+            {
+              "notation": 8,
+              "proba": 0.0
+            },
+            {
+              "notation": 9,
+              "proba": 6.04e-05
+            }
+          ]
+        },
+        {
+          "plot": 4,
+          "effectifs": 21006,
+          "dernier_eff_pit": 504,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.0
+            },
+            {
+              "notation": 3,
+              "proba": 0.060872318
+            },
+            {
+              "notation": 4,
+              "proba": 0.887407087
+            },
+            {
+              "notation": 5,
+              "proba": 0.043026986
+            },
+            {
+              "notation": 6,
+              "proba": 0.003618901
+            },
+            {
+              "notation": 7,
+              "proba": 0.0034226
+            },
+            {
+              "notation": 8,
+              "proba": 0.0
+            },
+            {
+              "notation": 9,
+              "proba": 0.0016521
+            }
+          ]
+        },
+        {
+          "plot": 5,
+          "effectifs": 8497,
+          "dernier_eff_pit": 250,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.0
+            },
+            {
+              "notation": 3,
+              "proba": 0.0
+            },
+            {
+              "notation": 4,
+              "proba": 0.086399156
+            },
+            {
+              "notation": 5,
+              "proba": 0.890600761
+            },
+            {
+              "notation": 6,
+              "proba": 0.019545953
+            },
+            {
+              "notation": 7,
+              "proba": 0.0
+            },
+            {
+              "notation": 8,
+              "proba": 0.0
+            },
+            {
+              "notation": 9,
+              "proba": 0.0034541
+            }
+          ]
+        },
+        {
+          "plot": 6,
+          "effectifs": 2831,
+          "dernier_eff_pit": 55,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.0
+            },
+            {
+              "notation": 3,
+              "proba": 0.0
+            },
+            {
+              "notation": 4,
+              "proba": 0.004316739
+            },
+            {
+              "notation": 5,
+              "proba": 0.063204237
+            },
+            {
+              "notation": 6,
+              "proba": 0.870231865
+            },
+            {
+              "notation": 7,
+              "proba": 0.0383408
+            },
+            {
+              "notation": 8,
+              "proba": 0.0156053
+            },
+            {
+              "notation": 9,
+              "proba": 0.008301
+            }
+          ]
+        },
+        {
+          "plot": 7,
+          "effectifs": 1055,
+          "dernier_eff_pit": 22,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.024704929
+            },
+            {
+              "notation": 3,
+              "proba": 0.087996651
+            },
+            {
+              "notation": 4,
+              "proba": 0.084290308
+            },
+            {
+              "notation": 5,
+              "proba": 0.044317676
+            },
+            {
+              "notation": 6,
+              "proba": 0.048530408
+            },
+            {
+              "notation": 7,
+              "proba": 0.6617557
+            },
+            {
+              "notation": 8,
+              "proba": 0.0186322
+            },
+            {
+              "notation": 9,
+              "proba": 0.0297721
+            }
+          ]
+        },
+        {
+          "plot": 8,
+          "effectifs": 515,
+          "dernier_eff_pit": 4,
+          "std": 4.0,
+          "probability_transitions": [
+            {
+              "notation": 1,
+              "proba": 0.0
+            },
+            {
+              "notation": 2,
+              "proba": 0.0
+            },
+            {
+              "notation": 3,
+              "proba": 0.0
+            },
+            {
+              "notation": 4,
+              "proba": 0.0
+            },
+            {
+              "notation": 5,
+              "proba": 0.0
+            },
+            {
+              "notation": 6,
+              "proba": 0.104676861
+            },
+            {
+              "notation": 7,
+              "proba": 0.0315888
+            },
+            {
+              "notation": 8,
+              "proba": 0.8019219
+            },
+            {
+              "notation": 9,
+              "proba": 0.0618125
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
