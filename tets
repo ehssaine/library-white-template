@@ -1,0 +1,151 @@
+#!/usr/bin/env python3
+"""
+Convert the transition-matrix Excel sheet into the API JSON payload:
+
+{
+  "matrices": [
+    {
+      "echelle": "PC",
+      "model": "shift_LCorp",
+      "rows": [
+        {
+          "plot": 1,
+          "effectifs": 6717,
+          "dernier_eff_pit": 95,
+          "std": 4.0,
+          "probability_transitions": [
+            {"notation": 1, "proba": 0.930260725},
+            ...
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+Expected sheet layout (single header row):
+ECHELLE | MODEL | EFFECTIFS | DERNIER_EFF_PIT | STD | Plot | 1 | 2 | ... | N
+
+Rows are grouped into one matrix per (ECHELLE, MODEL) pair, preserving
+the order in which they appear in the sheet. Notation columns are
+auto-detected: any column whose header is an integer.
+
+Usage:
+    python excel_to_matrices_json.py Matrices.xlsx -o payload.json
+    python excel_to_matrices_json.py Matrices.xlsx --sheet "Feuil1" --drop-zeros
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import math
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+REQUIRED_COLS = ("ECHELLE", "MODEL", "EFFECTIFS", "DERNIER_EFF_PIT", "STD", "Plot")
+
+
+def _to_float(value) -> float:
+    """Coerce a cell to float; tolerates blanks and French decimal commas."""
+    if value is None or (isinstance(value, float) and math.isnan(value)):
+        return 0.0
+    if isinstance(value, str):
+        value = value.strip().replace("\u00a0", "").replace(" ", "").replace(",", ".")
+        if not value:
+            return 0.0
+    return float(value)
+
+
+def load_sheet(path: Path, sheet, header_row: int) -> pd.DataFrame:
+    df = pd.read_excel(path, sheet_name=sheet, header=header_row)
+    df.columns = [str(c).strip() for c in df.columns]
+    missing = [c for c in REQUIRED_COLS if c not in df.columns]
+    if missing:
+        raise SystemExit(
+            f"Missing expected columns: {missing}. Found: {list(df.columns)}\n"
+            f"(If the header is not on the first row, use --header-row.)"
+        )
+    # Drop empty rows / rows without an ECHELLE value
+    df = df.dropna(how="all")
+    return df[df["ECHELLE"].notna()].reset_index(drop=True)
+
+
+def notation_columns(df: pd.DataFrame) -> list[tuple[int, str]]:
+    """Columns whose header is an integer (1..N) -> transition probabilities."""
+    cols = []
+    for c in df.columns:
+        try:
+            n = int(float(str(c).strip()))
+        except ValueError:
+            continue
+        cols.append((n, c))
+    if not cols:
+        raise SystemExit("No notation columns (headers 1..N) detected.")
+    return sorted(cols)
+
+
+def build_payload(df: pd.DataFrame, drop_zeros: bool = False, atol: float = 1e-3) -> dict:
+    nota_cols = notation_columns(df)
+    matrices: dict[tuple[str, str], dict] = {}
+    order: list[tuple[str, str]] = []
+
+    for _, row in df.iterrows():
+        key = (str(row["ECHELLE"]).strip(), str(row["MODEL"]).strip())
+        if key not in matrices:
+            matrices[key] = {"echelle": key[0], "model": key[1], "rows": []}
+            order.append(key)
+
+        transitions, total = [], 0.0
+        for n, col in nota_cols:
+            p = _to_float(row[col])
+            total += p
+            if drop_zeros and p == 0.0:
+                continue
+            transitions.append({"notation": n, "proba": p})
+
+        plot = int(_to_float(row["Plot"]))
+        if not math.isclose(total, 1.0, abs_tol=atol):
+            print(
+                f"[warn] {key[0]}/{key[1]} plot={plot}: probabilities sum to {total:.6f}",
+                file=sys.stderr,
+            )
+
+        matrices[key]["rows"].append(
+            {
+                "plot": plot,
+                "effectifs": int(_to_float(row["EFFECTIFS"])),
+                "dernier_eff_pit": int(_to_float(row["DERNIER_EFF_PIT"])),
+                "std": _to_float(row["STD"]),
+                "probability_transitions": transitions,
+            }
+        )
+
+    return {"matrices": [matrices[k] for k in order]}
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(
+        description="Excel transition matrices -> API JSON payload",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    ap.add_argument("input", type=Path, help="path to the .xlsx file")
+    ap.add_argument("-o", "--output", type=Path, default=Path("matrices.json"))
+    ap.add_argument("--sheet", default=0, help="sheet name or 0-based index (default: first)")
+    ap.add_argument("--header-row", type=int, default=0, help="0-based header row index")
+    ap.add_argument("--drop-zeros", action="store_true", help="omit transitions with proba == 0")
+    ap.add_argument("--indent", type=int, default=2)
+    args = ap.parse_args()
+
+    sheet = int(args.sheet) if str(args.sheet).isdigit() else args.sheet
+    df = load_sheet(args.input, sheet, args.header_row)
+    payload = build_payload(df, drop_zeros=args.drop_zeros)
+
+    args.output.write_text(json.dumps(payload, indent=args.indent, ensure_ascii=False), encoding="utf-8")
+    n_rows = sum(len(m["rows"]) for m in payload["matrices"])
+    print(f"Wrote {args.output} - {len(payload['matrices'])} matrices, {n_rows} rows.")
+
+
+if __name__ == "__main__":
+    main()
