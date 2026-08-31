@@ -1,0 +1,16 @@
+import pandas as pd
+
+df = pd.read_excel("param_iice.xlsx")   # CSV export: pd.read_csv(f, sep=";", decimal=",")
+
+keys = ["SCENARIO", "ZONE_GEO_MD", "SECTEUR_MD", "ECHELLE"]
+
+flat = (
+    df.melt(id_vars=keys + ["PLOT"], var_name="PLOT_TO", value_name="PROBA")
+      .dropna(subset=["PROBA"])              # PR/PP stop at notch 8 -> col 9 is blank
+      .rename(columns={"PLOT": "PLOT_FROM"})
+      .astype({"PLOT_FROM": int, "PLOT_TO": int})
+      .sort_values(keys + ["PLOT_FROM", "PLOT_TO"], ignore_index=True)
+)
+
+# sanity check: each original row is a probability distribution
+assert (flat.groupby(keys + ["PLOT_FROM"])["PROBA"].sum().round(4) == 1).all()
